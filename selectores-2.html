@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+	  <header>
+        <div class="logo">F5</div>
+        <h3>Selectores CSS</h3>
+		<a href="home.html" target="_blank"> <img class="home" src="assets/img/casa-blanca.png" alt="logo casa" width="25px"></a>
+    </header>
+ 
+
+    <!-- Menu -->
+    <nav class="menu">
+        <!-- Links a las sections -->
+		<h2>grupo 1</h2>
+        <div class="subgrupo">    
+        <a href="#section1">Section 1</a>
+       </div>
+       <hr>
+	   <h2>Pseudo-elementos</h2>
+       <div class="subgrupo">   
+        <a href="#section2">::after</a>
+        <a href="#section3">::before</a>
+        <a href="#section4">::first-letter</a>
+        <a href="#section5">::first-line</a>
+    </div>
+    <hr>
+	   <h2>grupo 3</h2>
+    <div class="subgrupo"> 
+        <a href="#section6">Section 6</a>
+        <a href="#section7">Section 7</a>
+        <a href="#section8">Section 8</a>
+        <a href="#section9">Section 9</a>
+    </div>
+    <hr>
+	  <h2>grupo 4</h2>
+    <div class="subgrupo"> 
+        <a href="#section10">Section 10</a>
+        <a href="#section11">Section 11</a>
+        <a href="#section12">Section 12</a>
+    </div>
+    </nav>
+  <hr>
+    <!-- Contenedor principal Sections -->
+    <div class="contenido">
+        <!-- Sections con IDs -->
+        <section id="section1">
+            <div class="left-column">
+           <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->  
+                <h2>Section 1</h2>
+           <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           <!-- AQUI DEBE TERMINAR LA INSERCCIÓN DE CONTENIDO -->
+				<div id="editor">
+                <h4>Html</h4>
+                <textarea id="htmlCode1" placeholder="HTML code"></textarea>
+                <h4>CSS</h4>
+                <textarea id="cssCode1" placeholder="CSS code"></textarea>
+				</div>
+            </div>
+            <div class="right-column">
+                <div class="preview">
+                    <h3>Preview</h3>
+                    <iframe id="preview1"></iframe>
+                </div>
+            </div>
+        </section>
+		  <!-- nueva section-->
+		   <section id="section2">
+            <div class="left-column">
+            <!-- AQUI NOMBRE DEL ELEMENTO-ESTILO-PSEUDOCLASE...-->  
+            <h2>Pseudo-elemento ::after</h2>
+             <!-- INSERTAMOS AQUI LOS TEXTOS DE CONTENIDO E IMAGENES -->
+             <p>Inserta un contenido despues de un elemento.</p>
+             <p>Dicho contenido podrá ser un texto o una imágen</p>
+             <p>Ejemplo de codigo:</p>
+              
+             <pre><code>
+            <!-- AQUI SE INSERTA EL CODIGO -->  
+                .mi-titulo::after { content: url('assets/img/warning.svg');
+                display: inline-block;
+                width: 12px;
+                height: 12px;}
+            <!-- AQUI DEBE TERMINAR LA INSERCIÓN EL CODIGO --> 
+             </code></pre>
+            
+             <p>Este será el resultado:</p>
+             <img src="assets/images/resultado-after.jpg" alt="imagen resultado ::after"  width="200px">
+          
+            <!-- AQUI DEBE TERMINAR LA INSERCCIÓN DE CONTENIDO -->
+             
+            
+				<div id="editor">
+                <h4>Html</h4>
+                <textarea id="htmlCode2" placeholder="HTML code"></textarea>
+                <h4>CSS</h4>
+                <textarea id="cssCode2" placeholder="CSS code"></textarea>
+				</div>
+            </div>
+            <div class="right-column">
+                <div class="preview">
+                    <h3>Preview</h3>
+                    <iframe id="preview2"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repetir para section2, section3, ... section12, cambiar IDs según corresponda-->
+    </div>
+
+    <!-- Botón Back to Top -->
+    <button id="top-button" onclick="scrollToTop()">↑</button>
+
+
+   <!-- Footer -->
+    <footer>
+        <h2>F5  -  CSS group</h2>
+        <p>© 2024 grupo 1</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
